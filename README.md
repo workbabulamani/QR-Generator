@@ -1,4 +1,5 @@
 # QR Code Generator (FastAPI)
+Author: [Babu Lamani](work.babulamani@gmail.com)
 
 A simple and lightweight **QR Code Generator** built with **FastAPI**, **Jinja2**, and the **qrcode** library.  
 Enter any text/URL to generate a QR code, preview it in the browser, or download it as a PNG.
