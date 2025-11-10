@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  qr-generator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: qr-generator
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - .:/app  # optional for local development; remove in production

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator - Premium QR Solutions</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo">⚡QR</div>
+                <h1 class="brand-name">QR Generator</h1>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link">Features</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link active">Tools</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <h2 class="hero-title">Transform Your Links Into QR Codes</h2>
+                <p class="hero-subtitle">Create beautiful, scannable QR codes in seconds. Premium quality, instant
+                    generation.</p>
+            </div>
+
+            <!-- Two Column Layout -->
+            <div class="layout-grid">
+                <!-- Left Panel - Input -->
+                <div class="panel left-panel">
+                    <div class="panel-header">
+                        <h3 class="panel-title">Enter Your Content</h3>
+                        <span class="panel-badge">Step 1</span>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <textarea id="text-input" class="text-input"
+                            placeholder="Paste your URL, text, or any content here..." rows="10"></textarea>
+                        <div class="input-counter">
+                            <span id="char-count">0</span>/<span>2048</span>
+                        </div>
+                    </div>
+
+                    <div class="panel-footer">
+                        <p class="info-text">💡 Supports URLs, text, phone numbers, and emails</p>
+                    </div>
+                </div>
+
+                <!-- Right Panel - Preview & Actions -->
+                <div class="panel right-panel">
+                    <div class="panel-header">
+                        <h3 class="panel-title">QR Code Preview</h3>
+                        <span class="panel-badge">Step 2</span>
+                    </div>
+
+                    <div class="qr-container">
+                        <div id="qr-preview" class="qr-preview">
+                            <div class="preview-placeholder">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                    <rect x="8" y="8" width="14" height="14" fill="currentColor" />
+                                    <rect x="38" y="8" width="14" height="14" fill="currentColor" />
+                                    <rect x="8" y="38" width="14" height="14" fill="currentColor" />
+                                    <rect x="24" y="24" width="8" height="8" fill="currentColor" />
+                                    <rect x="38" y="38" width="14" height="14" fill="currentColor" opacity="0.5" />
+                                </svg>
+                                <p>Your QR code will appear here</p>
+                            </div>
+                        </div>
+
+                        <div class="qr-actions">
+                            <button id="create-btn" class="btn btn-primary">
+                                <span class="btn-icon">✨</span>
+                                <span>Generate QR Code</span>
+                            </button>
+                            <button id="download-btn" class="btn btn-secondary">
+                                <span class="btn-icon">⬇️</span>
+                                <span>Download PNG</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="panel-footer">
+                        <p class="info-text">✓ High resolution • ✓ Instant download • ✓ No watermark</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="features-section">
+                <h3 class="features-title">Why Choose Our QR Generator?</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Lightning Fast</h4>
+                        <p>Instant QR generation with zero delays</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h4>Premium Quality</h4>
+                        <p>Crystal clear, scannable codes every time</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h4>Privacy First</h4>
+                        <p>All data processed locally, nothing stored</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h4>Fully Responsive</h4>
+                        <p>Works perfectly on mobile and desktop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- <p>&copy; 2025 <span class="brand-highlight">QR Generator Pro</span>. Built with precision. Build by Babu Lamani.</p> -->
+            <p>
+                &copy; 2025 <span class="brand-highlight">QR Generator Pro</span>.
+                Built with precision. Built by
+                <a href="https://github.com/workbabulamani" target="_blank" rel="noopener noreferrer">Babu Lamani</a>.
+            </p>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
