@@ -205,7 +205,7 @@ img = qr.make_image(fill_color="black", back_color="white")
 ---
 
 ## 📄 License
-MIT (or your preferred license)
+MIT
 
 ---
 
