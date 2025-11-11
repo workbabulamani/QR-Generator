@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const BASE_PATH = "{{ request.scope['root_path'] }}";
     const createBtn = document.getElementById("create-btn");
     const downloadBtn = document.getElementById("download-btn");
     const textInput = document.getElementById("text-input");
@@ -27,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         createBtn.innerHTML = '<span class="btn-icon">⏳</span><span>Generating...</span>';
 
         try {
-            const response = await fetch("/generate", {
+            const response = await fetch(`${BASE_PATH}/generate`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
