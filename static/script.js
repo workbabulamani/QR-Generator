@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         createBtn.innerHTML = '<span class="btn-icon">⏳</span><span>Generating...</span>';
 
         try {
-            const response = await fetch(`${BASE_PATH}/generate`, {
+            const response = await fetch("qrcode/generate", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -140,55 +140,3 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
     document.head.appendChild(style);
 });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     const createBtn = document.getElementById("create-btn");
-//     const downloadBtn = document.getElementById("download-btn");
-//     const textInput = document.getElementById("text-input");
-//     const qrPreview = document.getElementById("qr-preview");
-
-//     const textField = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field'));
-    
-//     // Re-initialize all MDC components
-//     mdc.autoInit();
-
-
-//     createBtn.addEventListener("click", async () => {
-//         const text = textInput.value;
-//         if (!text) {
-//             alert("Please enter some text.");
-//             return;
-//         }
-
-//         const response = await fetch("/generate", {
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/json",
-//             },
-//             body: JSON.stringify({ text }),
-//         });
-
-//         if (response.ok) {
-//             const blob = await response.blob();
-//             const url = URL.createObjectURL(blob);
-//             qrPreview.innerHTML = `<img src="${url}" alt="QR Code">`;
-//         } else {
-//             alert("Error generating QR code.");
-//         }
-//     });
-
-//     downloadBtn.addEventListener("click", () => {
-//         const text = textInput.value;
-//         if (!text) {
-//             alert("Please enter some text.");
-//             return;
-//         }
-//         const url = `/download?text=${encodeURIComponent(text)}`;
-//         const a = document.createElement("a");
-//         a.href = url;
-//         a.download = "qr_code.png";
-//         document.body.appendChild(a);
-//         a.click();
-//         document.body.removeChild(a);
-//     });
-// });
