@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const BASE_PATH = "{{ request.scope['root_path'] }}";
     const createBtn = document.getElementById("create-btn");
     const downloadBtn = document.getElementById("download-btn");
     const textInput = document.getElementById("text-input");
