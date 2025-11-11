@@ -27,5 +27,5 @@ CMD ["uvicorn", "app:app",
      "--port", "8080",
      "--root-path", "/qrcode",
      "--proxy-headers",
-     "--forwarded-allow-ips", "192.168.0.10"]
+     "--forwarded-allow-ips", "192.168.0.14"]
 
