@@ -16,10 +16,16 @@ EXPOSE 8080
 
 # Run FastAPI using uvicorn
 # CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080", "--root-path", "/qrcode", "--proxy-headers"]
+# CMD ["uvicorn", "app:app",
+#      "--host", "0.0.0.0",
+#      "--port", "8080",
+#      "--root-path", "/qrcode",
+#      "--proxy-headers",
+#      "--forwarded-allow-ips", "*"]
 CMD ["uvicorn", "app:app",
      "--host", "0.0.0.0",
      "--port", "8080",
      "--root-path", "/qrcode",
      "--proxy-headers",
-     "--forwarded-allow-ips", "*"]
+     "--forwarded-allow-ips", "192.168.0.10"]
 
