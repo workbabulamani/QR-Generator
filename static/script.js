@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         createBtn.innerHTML = '<span class="btn-icon">⏳</span><span>Generating...</span>';
 
         try {
-            const response = await fetch("qrcode/generate", {
+            const response = await fetch("/generate", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
