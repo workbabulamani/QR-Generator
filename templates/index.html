@@ -143,6 +143,9 @@
     </footer>
 
     <!-- <script src="/static/script.js"></script> -->
+    <script>
+  const BASE_PATH = "{{ request.scope['root_path'] }}";
+</script>
     <script src="{{ url_for('static', path='script.js') }}"></script>
 </body>
 
