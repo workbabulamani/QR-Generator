@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 import qrcode
 import io
 
-app = FastAPI()
+app = FastAPI(root_path="/qrcode")
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
